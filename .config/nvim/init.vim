@@ -66,11 +66,15 @@ set noshowcmd
 	imap <leader><leader>i <esc>:call ToggleIPA()<CR>a
 	nm <leader><leader>q :call ToggleProse()<CR>
 
-" Shortcutting split navigation, saving a keypress:
-	map <C-h> <C-w>h
-	map <C-j> <C-w>j
-	map <C-k> <C-w>k
-	map <C-l> <C-w>l
+" " Shortcutting split navigation, saving a keypress:
+" 	map <C-h> <C-w>h
+" 	map <C-j> <C-w>j
+" 	map <C-k> <C-w>k
+" 	map <C-l> <C-w>l
+
+" Centered cursor mode:
+:nnoremap k kzz
+:nnoremap j jzz
 
 " Replace ex mode with gq
 	map Q gq
