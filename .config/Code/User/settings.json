@@ -1,0 +1,88 @@
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "git.autofetch": true,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "default",
+    "window.zoomLevel": 0.6,
+    "editor.fontFamily": "Source Code Pro, monospace",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 19,
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
+    "editor.minimap.side": "right",
+    "editor.cursorSurroundingLines": 999,
+    "editor.suggestSelection": "first",
+    "editor.renderIndentGuides": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "zenMode.hideStatusBar": true,
+    "zenMode.hideTabs": true,
+    "zenMode.fullScreen": true,
+    "zenMode.centerLayout": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "keyboard.dispatch": "keyCode",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.visible": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.showTabs": false,
+    "python.venvPath": "~/.local/share/pyenvs",
+    "python.sortImports.path": "isort",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "python.sortImports": true
+        }
+    }
+}
