@@ -1,0 +1,31 @@
+# The Simple X Hotkey Daemon is the program used by LARBS to map most of the
+# dwm-independent commands.  This file is pretty readable, so I'll let you read
+# it.
+
+# The goal here is to use key-sequences instead of key-chords. This is heavily
+# inspired by the spacemacs (https://www.spacemacs.org/) configuration framework
+# for emacs.
+
+# Screen Brightness
+super + n : {h, l, j, k}
+ light {-S 1, -S 100, -U 10, -A 10}
+
+# Volume Controls
+super + m : {m, j, k}
+ { \
+ pamixer -t; kill -44 $(pidof dwmblocks), \
+ pamixer --allow-boost -d 3; kill -44 $(pidof dwmblocks), \
+ pamixer --allow-boost -i 3; kill -44 $(pidof dwmblocks), \
+ }
+
+# Bluetooth
+super + b ; {o, O, d}
+ { \
+ bluetoothctl power on, \
+ bluetoothctl power off, \
+ bluetoothctl disconnect, \
+ }
+
+# Close applications with mouse middle click
+button2
+  xdotool key "Super+q"
