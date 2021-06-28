@@ -1,16 +1,19 @@
-# The Voidrice (Luke Smith <https://lukesmith.xyz>'s dotfiles)
+# The Voidrice
 
-These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
-[my YouTube channel](https://youtube.com/c/lukesmithxyz).
+This is a fork of Luke Smith <https://lukesmith.xyz>'s dotfiles.
+
+The dotfiles here are based on the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on [Luke's YouTube channel](https://youtube.com/c/lukesmithxyz).
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
 	- vim/nvim (text editor)
 	- zsh (shell)
+    - sxhkd (general key binder)
 	- lf (file manager)
 	- mpd/ncmpcpp (music)
 	- sxiv (image/gif viewer)
 	- mpv (video player)
+    - tmux
 	- other stuff like xdg default programs, inputrc and more, etc.
 - I try to minimize what's directly in `~` so:
 	- All configs that can be in `~/.config/` are.
@@ -35,11 +38,16 @@ as well.
 
 ## Install these dotfiles and all dependencies
 
-Use [LARBS](https://larbs.xyz) to autoinstall everything:
+Use [my fork](https://github.com/theblackfly/LARBS) of [LARBS](https://larbs.xyz) to autoinstall everything:
 
-```
-curl -LO larbs.xyz/larbs.sh
+```sh
+curl -LO https://github.com/theblackfly/LARBS/blob/blackfly/larbs.sh
+sudo sh larbs.sh
 ```
 
-or clone the repo files directly to your home directory and install the
-[dependencies](https://github.com/LukeSmithxyz/LARBS/blob/master/progs.csv).
+or clone the repo files directly to your home directory and install [the prerequisite programs](https://github.com/theblackfly/LARBS/blob/blackfly/progs.csv).
+
+## Do you want to customize the dotfiles further and version control it with git?
+
+1. Fork this repository.
+2. Create a new branch and make your changes there.
