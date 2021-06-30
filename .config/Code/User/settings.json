@@ -8,6 +8,7 @@
     "editor.fontFamily": "Source Code Pro, monospace",
     "editor.fontSize": 13,
     "editor.lineHeight": 19,
+    "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
     "editor.minimap.side": "right",
