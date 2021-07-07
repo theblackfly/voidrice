@@ -53,6 +53,9 @@ export JULIA_HISTORY="${XDG_CONFIG_HOME:-$HOME:/.config}/julia/history"
 # Emacs
 export PATH=$PATH:$HOME/.local/src/doom-emacs/bin
 
+# Add julia programs to $PATH
+export PATH=$PATH:$JULIA_DEPOT_PATH/bin
+
 # Add rust programs to $PATH
 export PATH=$PATH:$CARGO_HOME/bin
 
