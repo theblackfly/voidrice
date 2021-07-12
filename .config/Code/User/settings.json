@@ -9,8 +9,8 @@
     "editor.fontSize": 13,
     "editor.lineHeight": 19,
     "editor.scrollbar.verticalScrollbarSize": 0,
-    "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.minimap.enabled": true,
     "editor.minimap.side": "right",
     "editor.cursorSurroundingLines": 999,
     "editor.suggestSelection": "first",
@@ -72,7 +72,7 @@
         }
     ],
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "workbench.iconTheme": "vscode-icons",
     "workbench.activityBar.visible": true,
@@ -85,5 +85,11 @@
         "editor.codeActionsOnSave": {
             "python.sortImports": true
         }
-    }
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "notebook.compactView": false,
+    "jupyter.askForKernelRestart": false
 }
